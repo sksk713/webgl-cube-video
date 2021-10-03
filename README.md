@@ -1,12 +1,12 @@
 # computer graphics
 
 ## Video texture 구현
-`Reference`와 `WebGL Tutorial`을 참고하여 `Video texuture`를 구현했습니다.
+`Reference`와 `WebGL Tutorial`을 참고하여 `Video texuture 구현
 
 ### 기능
 
-1. Video 영상을 play/pause 할 수 있습니다.
-2. HTML에서 비디오를 화면에 띄우고 id를 javascript로 호출하여 비디오 객체를 하나 더 생성하여 화면에 현재 재생중인 영상을 추가했고 Mapping된 영상과 동시에 pause,start 기능이 가능하도록 설정했습니다.
+1. Video 영상을 play/pause 한다.
+2. HTML에서 비디오를 화면에 띄우고 id를 javascript로 호출하여 비디오 객체를 하나 더 생성하여 화면에 현재 재생중인 영상을 추가했고 Mapping된 영상과 동시에 pause,start 기능이 가능하다.
 ```html
 <html> :<video id="ing" video src="b.mp4" width="480" height="270" autoplay="autoplay">현재 재생중인 영상</video>
 <javascript>const current = document.getElementById("ing");
@@ -24,7 +24,7 @@ var pauseVideo = document.getElementById('pause');
   }, true);
 ```
 
-3. 큐브 회전을 반대로 하거나 deltaTime 변수를 조작하여 속도를 변경할 수 있습니다.
+3. 큐브 회전을 반대로 하거나 deltaTime 변수를 조작하여 속도를 변경한다.
 ```js
 function cuberotate(){
   if(speed >= 1.0){
@@ -65,7 +65,7 @@ now *= 0.001;
 ```
 
 ### 이벤트리스너
-버튼 6개를 구현하였고 비디오 관련된 버튼은 getElementById로 호출 받아서 입력했고, 큐브 관련 버튼은 버튼클릭시 함수가 호출됩니다.
+버튼 6개를 구현하였고 비디오 관련된 버튼은 getElementById로 호출 받아서 입력했고, 큐브 관련 버튼은 버튼클릭시 함수를 호출한다.
 ```html
 <button id="play">영상 다시시작</button>
 <button id="pause">영상 일시정지</button>
